@@ -1,0 +1,27 @@
+.note-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.delete-btn.mdl-button {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.note-edit-add-btn {
+    display: flex;
+    align-items: flex-end;
+}
+
+.notes-container>* {
+    margin: 20px;
+}
+
+.notes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
