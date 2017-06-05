@@ -1,0 +1,9 @@
+{{#if isEdit}}
+    {{note-card-edit saved=(action "isSaved")}}
+{{else}}
+<div {{action "newNote"}} class="note-card mdl-card mdl-shadow--2dp">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+         <i class="material-icons">add</i>
+    </button>
+</div>
+{{/if}}

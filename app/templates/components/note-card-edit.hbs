@@ -1,0 +1,15 @@
+<div class="note-card mdl-card mdl-shadow--2dp">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        {{input type="text" class="mdl-textfield__input mdl-card__title-text" id="sample1" value=title}}
+        <label class="mdl-textfield__label" for="sample1">Title ...</label>
+
+    </div>
+    <div class="mdl-textfield mdl-js-textfield">
+        <!-- <textarea class="mdl-textfield__input" type="text" rows="3" id="sample5"></textarea> -->
+        {{textarea type="text" class="mdl-textfield__input" rows="3" id="sample5" value=content}}
+        <label class="mdl-textfield__label" for="sample5">Content ...</label>
+    </div>
+    <div class="note-edit-add-btn">
+        <button {{action "saveNote" title content}} class="mdl-button mdl-js-button"> Save </button>
+    </div>
+</div>
